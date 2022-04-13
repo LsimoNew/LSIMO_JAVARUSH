@@ -5,21 +5,12 @@ public class Point {
   public double x;
   public double y;
 
+  public Point(double x, double y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  public double distance(Point p1, Point p2) {
+    return Math.sqrt(Math.pow((p1.x - p1.y), 2) + Math.pow((p2.x - p2.y), 2));
+  }
 }
-
-//  public void p1(double x1, double y1) {
-//    this.x1 = x1;
-//    this.y1 = y1;
-//  }
-//
-//  public void p2(double x2, double y2) {
-//    this.x2 = x2;
-//    this.y2 = y2;
-//  }
-
-//  public double distance(double p1, double p2) {
-//    return this.p1 = Math.pow((this.xp1 - this.yp1), 2);
-//    return this.p2 = Math.pow((this.xp2 - this.yp2), 2);
-//  }
-
-
